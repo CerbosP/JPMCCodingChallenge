@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">JPMCCodingChallenge</string>
+    <string name="kelvin">Kelvin</string>
+    <string name="celsius">Celsius</string>
+    <string name="fahrenheit">Fahrenheit</string>
+    <string name="choose_unit">Choose Unit</string>
+    <string name="retrieve_city_weather">Retrieve City Weather</string>
+    <string name="enter_city_name">Enter city name</string>
+</resources>

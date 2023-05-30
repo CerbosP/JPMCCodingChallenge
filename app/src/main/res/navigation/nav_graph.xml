@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_starting_page">
+
+    <fragment
+        android:id="@+id/nav_starting_page"
+        android:name="com.example.jpmccodingchallenge.view.views.StartingPageFragment">
+
+        <action
+            android:id="@+id/action_starting_page_to_weather_detail"
+            app:destination="@id/nav_weather_detail"/>
+
+        <argument
+            android:name="city_name"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue=""/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_weather_detail"
+        android:name="com.example.jpmccodingchallenge.view.views.WeatherDetailsFragment">
+
+        <argument
+            android:name="city_name"
+            app:argType="string"/>
+
+        <argument
+            android:name="temp_unit"
+            app:argType="string"/>
+
+    </fragment>
+
+</navigation>
